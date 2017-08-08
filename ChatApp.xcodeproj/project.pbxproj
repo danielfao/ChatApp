@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		112E20091F38A4230011447D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112E20081F38A4230011447D /* LoginViewController.swift */; };
+		112E200B1F38C9E10011447D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 112E200A1F38C9E10011447D /* GoogleService-Info.plist */; };
 		117E37D11F389BEA002F5740 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117E37D01F389BEA002F5740 /* AppDelegate.swift */; };
 		117E37D31F389BEA002F5740 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117E37D21F389BEA002F5740 /* ViewController.swift */; };
 		117E37D61F389BEA002F5740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117E37D41F389BEA002F5740 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		112E20081F38A4230011447D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		112E200A1F38C9E10011447D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		117E37CD1F389BEA002F5740 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		117E37D01F389BEA002F5740 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		117E37D21F389BEA002F5740 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				117E37D41F389BEA002F5740 /* Main.storyboard */,
 				117E37D71F389BEA002F5740 /* Assets.xcassets */,
 				117E37D91F389BEA002F5740 /* LaunchScreen.storyboard */,
+				112E200A1F38C9E10011447D /* GoogleService-Info.plist */,
 				117E37DC1F389BEA002F5740 /* Info.plist */,
 			);
 			path = ChatApp;
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				117E37DB1F389BEA002F5740 /* LaunchScreen.storyboard in Resources */,
+				112E200B1F38C9E10011447D /* GoogleService-Info.plist in Resources */,
 				117E37D81F389BEA002F5740 /* Assets.xcassets in Resources */,
 				117E37D61F389BEA002F5740 /* Main.storyboard in Resources */,
 			);
@@ -195,9 +199,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChatApp/Pods-ChatApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

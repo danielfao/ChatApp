@@ -6,5 +6,8 @@ target 'ChatApp' do
   use_frameworks!
 
   # Pods for ChatApp
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
 
 end
