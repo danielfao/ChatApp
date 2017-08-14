@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MessagesViewController.swift
 //  ChatApp
 //
 //  Created by Daniel Oliveira on 8/7/17.
@@ -32,14 +32,13 @@ class MessagesViewController: UITableViewController {
         //user is not logged in
         if Auth.auth().currentUser?.uid == nil {
             perform(#selector(handleLogout), with: nil, afterDelay: 0)
-            handleLogout()
         } else {
             let uid = Auth.auth().currentUser?.uid
-            Database.database().reference().child("users").child(uid!).observe(.value, with: { (snapshot) in
+            Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
                 if let dictionary = snapshot.value as? [String: AnyObject] {
                     self.navigationItem.title = dictionary["name"] as? String
                 }
-            })
+            }, withCancel: nil)
         }
     }
     
