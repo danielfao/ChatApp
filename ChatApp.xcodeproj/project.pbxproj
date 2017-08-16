@@ -17,6 +17,7 @@
 		117E37DB1F389BEA002F5740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117E37D91F389BEA002F5740 /* LaunchScreen.storyboard */; };
 		11EA23F01F3B3AE600A63358 /* NewMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA23EF1F3B3AE600A63358 /* NewMessageTableViewController.swift */; };
 		2BEE7955A56B033C8F5E774C /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF527F2F6CE49840A2405226 /* Pods_ChatApp.framework */; };
+		E0DBA78A1F43A40D000BBD44 /* LoginViewControllers+handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DBA7891F43A40D000BBD44 /* LoginViewControllers+handlers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		88B542DB9A19363036DAB5C9 /* Pods-ChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatApp/Pods-ChatApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A8612B08D6868AC462186100 /* Pods-ChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatApp/Pods-ChatApp.release.xcconfig"; sourceTree = "<group>"; };
 		CF527F2F6CE49840A2405226 /* Pods_ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0DBA7891F43A40D000BBD44 /* LoginViewControllers+handlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginViewControllers+handlers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				112E20081F38A4230011447D /* LoginViewController.swift */,
 				117E37D21F389BEA002F5740 /* MessagesViewController.swift */,
 				11EA23EF1F3B3AE600A63358 /* NewMessageTableViewController.swift */,
+				E0DBA7891F43A40D000BBD44 /* LoginViewControllers+handlers.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -204,7 +207,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		43DB741CFA976C1EFD6F1F8F /* [CP] Embed Pods Frameworks */ = {
@@ -253,6 +256,7 @@
 			files = (
 				11EA23F01F3B3AE600A63358 /* NewMessageTableViewController.swift in Sources */,
 				112E20091F38A4230011447D /* LoginViewController.swift in Sources */,
+				E0DBA78A1F43A40D000BBD44 /* LoginViewControllers+handlers.swift in Sources */,
 				117E37D31F389BEA002F5740 /* MessagesViewController.swift in Sources */,
 				112C83821F3DDC55000A6CDF /* User.swift in Sources */,
 				117E37D11F389BEA002F5740 /* AppDelegate.swift in Sources */,
